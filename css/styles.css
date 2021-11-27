@@ -1,0 +1,131 @@
+:root{
+    --pmr-clr-pale-blue: hsl(225, 100%, 94%);
+    --pmr-clr-bright-blue: hsl(245, 75%, 52%);
+    --ntl-clr-v-pale-blue: hsl(225, 100%, 98%);
+    --ntl-clr-desatured-blue: hsl(224, 23%, 55%);
+    --ntl-clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-red-hat:'Red Hat Display', serif; 
+     
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: var(--ff-red-hat);
+}
+
+body{
+    min-height: 100vh;
+    padding-top: 1em;
+    background-color: var(--pmr-clr-pale-blue);
+}
+
+
+p{
+    font-weight: 500;
+}
+
+.hero{
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 2.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-white);
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 20rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    
+}
+
+.title, .h4__annual-price{
+    color: var(--ntl-clr-dark-blue);
+}
+
+.app-description{
+   max-width: 25ch;
+   color:var(--ntl-clr-desatured-blue);
+   line-height: 1.75rem;
+}
+
+.music-plan{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    max-width: 18rem;
+    background-color: var(--ntl-clr-v-pale-blue);
+    border-radius: .5rem;
+    
+}
+
+
+
+
+.annual-price{
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+
+.p__annual-price{
+    color: var(--ntl-clr-desatured-blue);
+}
+
+.change-link{
+    font-size: .9rem;
+    margin-left: 3rem;
+    font-weight: 700;
+    color: var(--pmr-clr-bright-blue);
+    
+}
+
+.btn-payment{
+    color: var(--clr-white);
+    padding: 1em 4em;
+    border-radius: .5rem;
+    background-color: var(--pmr-clr-bright-blue);
+    text-decoration: none;
+}
+
+
+.btn-payment:hover, .change-link:hover{
+    opacity: 0.7;
+}
+
+
+.cancel-order{
+    color: var(--ntl-clr-desatured-blue);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.cancel-order:hover{
+    color: var(--ntl-clr-dark-blue);
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
